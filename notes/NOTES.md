@@ -1,11 +1,18 @@
 # Algorithm Notes
 
 
-## Search Insert Position
+### Search for A Range
 
-* Binary Search
+* 2016/09/19
 
 
-## House Robber
+### Search Insert Position
+
+* 2016/09/19
+
+
+### House Robber
+
+* 2016/09/19
 
 ![](./house-robber.jpg)
