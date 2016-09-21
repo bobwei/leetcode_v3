@@ -1,6 +1,14 @@
 # Algorithm Notes
 
 
+### Course Schedule
+
+* 2016/09/21
+* [Directed Graphs](http://www.cs.princeton.edu/courses/archive/spring07/cos226/lectures/20DirectedGraphs.pdf)
+* [Directed Graphs](http://algs4.cs.princeton.edu/42digraph/)
+* [topological-sorting](http://songlee24.github.io/2015/05/07/topological-sorting/)
+
+
 ### House Robber ii
 
 * 2016/09/20
