@@ -1,6 +1,13 @@
 # Algorithm Notes
 
 
+### House Robber III
+
+* 2016/09/24
+* [http://www.cnblogs.com/grandyang/p/5275096.html](http://www.cnblogs.com/grandyang/p/5275096.html)
+* there is no way to use javascript object's reference as hash key, so it's hard to do tree recursive call with memorization
+
+
 ### Course Schedule II
 
 * 2016/09/23
@@ -14,7 +21,7 @@
 * [topological-sorting](http://songlee24.github.io/2015/05/07/topological-sorting/)
 
 
-### House Robber ii
+### House Robber II
 
 * 2016/09/20
 
