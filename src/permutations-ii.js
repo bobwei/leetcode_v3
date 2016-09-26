@@ -3,21 +3,22 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-const permuteUnique = (nums, output = [], used = {}, path = []) => {
+const permuteUnique = (nums, output = [], pathSet = {}, path = []) => {
   if (path.length === nums.length) {
     output.push([...path]);
     return output;
   }
+  const levelSet = {};
   for (let i = 0; i < nums.length; i++) {
-    if (!used[i - 1] && nums[i] === nums[i - 1]) {
-      continue;
-    }
-    if (!used[i]) {
-      used[i] = true;
-      path.push(nums[i]);
-      permuteUnique(nums, output, used, path);
-      path.pop();
-      used[i] = false;
+    if (!pathSet[i]) {
+      pathSet[i] = true;
+      if (!levelSet[nums[i]]) {
+        levelSet[nums[i]] = true;
+        path.push(nums[i]);
+        permuteUnique(nums, output, pathSet, path);
+        path.pop();
+      }
+      pathSet[i] = false;
     }
   }
   return output;
@@ -25,3 +26,5 @@ const permuteUnique = (nums, output = [], used = {}, path = []) => {
 
 console.log(permuteUnique([1, 1, 2]));
 console.log(permuteUnique([1, 2, 3]));
+console.log(permuteUnique([1, 1, 1, 2, 1]));
+console.log(permuteUnique([3, 3, 0, 3]));
