@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign */
+/* eslint-disable no-param-reassign, max-len */
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -28,3 +28,6 @@ console.log(permuteUnique([1, 1, 2]));
 console.log(permuteUnique([1, 2, 3]));
 console.log(permuteUnique([1, 1, 1, 2, 1]));
 console.log(permuteUnique([3, 3, 0, 3]));
+const t1 = new Date();
+permuteUnique([3, 3, 0, 3, 3, 3, 0, 3, 3, 3, 0, 3, 3, 3, 0, 3, 3, 3, 0, 3, 3, 3, 0, 3, 3, 3, 0, 3, 3, 3]);
+console.log('time elapsed', ((new Date()) - t1) / 1000);
