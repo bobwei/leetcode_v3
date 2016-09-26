@@ -9,7 +9,7 @@ const combine = (n, k, startIndex = 0, output = [], path = []) => {
     return output;
   }
   for (let i = startIndex; i < n; i++) {
-    path.push(i);
+    path.push(i + 1);
     combine(n, k, i + 1, output, path);
     path.pop();
   }
