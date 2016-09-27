@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Word Search
+
+* 2016/09/28
+
+
 ### Minimum Path Sum
 
 * 2016/09/27
