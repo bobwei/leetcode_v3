@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Number of 1 Bits
+
+* 2016/09/27
+
+
 ### Binary Watch
 
 * 2016/09/27
