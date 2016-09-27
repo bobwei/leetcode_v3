@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Decode Ways
+
+* 2016/09/27
+
+
 ### Permutations II
 
 * 2016/09/26
