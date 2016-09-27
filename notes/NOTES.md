@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Binary Watch
+
+* 2016/09/27
+
+
 ### Letter Combinations of a Phone Number
 
 * 2016/09/27
