@@ -1,6 +1,12 @@
 # Algorithm Notes
 
 
+### Implement LCP with Trie
+
+* 2016/09/28
+* [Longest Common Prefix](http://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
+
+
 ### Implement Trie with DFS and Suggest
 
 * 2016/09/28
