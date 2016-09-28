@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### First Unique Character in a String
+
+* 2016/09/29
+
+
 ### Word Break
 
 * 2016/09/29
