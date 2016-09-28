@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Implement Trie Prefix Tree
+
+* 2016/09/28
+
+
 ### Word Search
 
 * 2016/09/28
