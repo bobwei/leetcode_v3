@@ -4,6 +4,7 @@
 ### Implement Trie with DFS and Suggest
 
 * 2016/09/28
+* [Prefix tree](http://whiteboxcomputing.com/java/prefix_tree/)
 
 
 ### Implement Trie Prefix Tree

@@ -93,6 +93,26 @@ export default class Trie {
     }
     return output;
   }
+
+  /**
+   * @param {void}
+   * @return {string}
+   * Returns longest common prefix.
+   */
+  _lcp(path = []) {
+    if (Object.keys(this.children).length !== 1) {
+      return [];
+    }
+    for (const key in this.children) {
+      path.push(key);
+      this.children[key]._lcp(path);
+    }
+    return path;
+  }
+
+  lcp() {
+    return this._lcp().join('');
+  }
 }
 
 if (require.main === module) {
@@ -106,4 +126,8 @@ if (require.main === module) {
   console.log('suggest("he") =', trie.suggest('he'), 'expected =', ['hel', 'hello']);
   console.log('suggest("") =', trie.suggest(''), 'expected =', words);
   console.log('suggest("123") =', trie.suggest('123'), 'expected =', []);
+  const trie2 = new Trie();
+  const words2 = ['hello', 'hella', 'hellb'];
+  words2.forEach(w => trie2.insert(w));
+  console.log(trie2.lcp());
 }
