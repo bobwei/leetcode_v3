@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /**
  * @param {string} s
  * @param {set<string>} wordDict
@@ -23,5 +24,5 @@ const wordBreak = (s, wordDict) => {
 
 console.log(wordBreak('leetcode', new Set(['leet', 'code'])));
 console.log(wordBreak('leetcodewsss', new Set(['leet', 'code', 'wsss'])));
-console.log(wordBreak('baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', new Set(['a','aa','aaa','aaaa','aaaaa','aaaaaa','aaaaaaa','aaaaaaaa','aaaaaaaaa','aaaaaaaaaa'])));
+console.log(wordBreak('baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', new Set(['a', 'aa', 'aaa', 'aaaa', 'aaaaa', 'aaaaaa', 'aaaaaaa', 'aaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaaa'])));
 console.log(wordBreak('catsanddog', new Set(['cat', 'cats', 'and', 'sand', 'dog', 'ddog'])));
