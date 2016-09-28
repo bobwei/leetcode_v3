@@ -1,6 +1,12 @@
 # Algorithm Notes
 
 
+### Word Search II
+
+* 2016/09/28
+* [Word Search II 解题报告](http://m.blog.csdn.net/article/details?id=45846527)
+
+
 ### Implement LCP with Trie
 
 * 2016/09/28
