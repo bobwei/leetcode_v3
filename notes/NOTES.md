@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Implement Trie with DFS and Suggest
+
+* 2016/09/28
+
+
 ### Implement Trie Prefix Tree
 
 * 2016/09/28
