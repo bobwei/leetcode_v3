@@ -1,6 +1,15 @@
 # Algorithm Notes
 
 
+### Minimum Height Trees
+
+* 2016/09/29
+* [http://bookshadow.com/weblog/2015/11/26/leetcode-minimum-height-trees/](http://bookshadow.com/weblog/2015/11/26/leetcode-minimum-height-trees/)
+
+The basic idea is "keep deleting leaves layer-by-layer, until reach the root."
+Specifically, first find all the leaves, then remove them. After removing, some nodes will become new leaves. So we can continue remove them. Eventually, there is only 1 or 2 nodes left. If there is only one node left, it is the root. If there are 2 nodes, either of them could be a possible root.
+
+
 ### Word Break II
 
 * 2016/09/29

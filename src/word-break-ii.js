@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /**
  * @param {string} s
  * @param {set<string>} wordDict
