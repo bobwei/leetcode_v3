@@ -16,7 +16,7 @@ const getNeighbors = (wordList, word) => {
     for (let j = 0; j < ALPHABETS_SIZE; j++) {
       const char = String.fromCharCode(BASE_CHAR_CODE + j);
       const newWord = word.substr(0, i) + char + word.substr(i + 1, word.length);
-      if (wordList.has(newWord) && newWord !== word) {
+      if (wordList.has(newWord)) {
         output.push(newWord);
         wordList.delete(newWord);
       }
@@ -29,6 +29,7 @@ const ladderLength = (beginWord, endWord, wordList) => {
   const queue = [beginWord];
   const distance = { [beginWord]: 0 };
   wordList.add(endWord);
+  wordList.delete(beginWord);
   while (queue.length && !distance[endWord]) {
     const vertex = queue.shift();
     const neighbors = getNeighbors(wordList, vertex);
