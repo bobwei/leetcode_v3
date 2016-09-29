@@ -19,6 +19,7 @@ const getNeighbors = (wordList, word) => {
       const newWord = splitWord.join('');
       if (wordList.has(newWord) && newWord !== word) {
         output.push(newWord);
+        wordList.delete(newWord);
       }
     }
   }
@@ -28,10 +29,10 @@ const getNeighbors = (wordList, word) => {
 const ladderLength = (beginWord, endWord, wordList) => {
   const queue = [beginWord];
   const distance = { [beginWord]: 0 };
-  const verticesSet = new Set([...wordList, beginWord, endWord]);
+  wordList.add(endWord);
   while (queue.length && !distance[endWord]) {
     const vertex = queue.shift();
-    const neighbors = getNeighbors(verticesSet, vertex);
+    const neighbors = getNeighbors(wordList, vertex);
     for (let i = 0; i < neighbors.length; i++) {
       const neighbor = neighbors[i];
       if (!distance[neighbor]) {
