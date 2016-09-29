@@ -13,10 +13,9 @@ const ALPHABETS_SIZE = 26;
 const getNeighbors = (wordList, word) => {
   const output = [];
   for (let i = 0; i < word.length; i++) {
-    const splitWord = word.split('');
     for (let j = 0; j < ALPHABETS_SIZE; j++) {
-      splitWord[i] = String.fromCharCode(BASE_CHAR_CODE + j);
-      const newWord = splitWord.join('');
+      const char = String.fromCharCode(BASE_CHAR_CODE + j);
+      const newWord = word.substr(0, i) + char + word.substr(i + 1, word.length);
       if (wordList.has(newWord) && newWord !== word) {
         output.push(newWord);
         wordList.delete(newWord);
