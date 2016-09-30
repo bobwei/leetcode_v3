@@ -1,9 +1,9 @@
 # Algorithm Notes
 
 
-# Word Ladder 2
+### Word Ladder 2
 
-* Not Yet Accepted
+* 2016/09/30 Not Yet Accepted
 * [https://discuss.leetcode.com/topic/27504/my-concise-java-solution-based-on-bfs-and-dfs/2](https://discuss.leetcode.com/topic/27504/my-concise-java-solution-based-on-bfs-and-dfs/2)
 * [http://decomplexify.blogspot.tw/2014/05/word-ladder-ii.html](http://decomplexify.blogspot.tw/2014/05/word-ladder-ii.html)
 
