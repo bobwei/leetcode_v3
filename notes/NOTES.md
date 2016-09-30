@@ -1,6 +1,11 @@
 # Algorithm Notes
 
-https://discuss.leetcode.com/topic/27504/my-concise-java-solution-based-on-bfs-and-dfs/2
+
+# Word Ladder 2
+
+* Not Yet Accepted
+* ()[https://discuss.leetcode.com/topic/27504/my-concise-java-solution-based-on-bfs-and-dfs/2]
+* ()[http://decomplexify.blogspot.tw/2014/05/word-ladder-ii.html]
 
 
 ### Word Ladder
