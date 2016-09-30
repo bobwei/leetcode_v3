@@ -1,5 +1,7 @@
 # Algorithm Notes
 
+https://discuss.leetcode.com/topic/27504/my-concise-java-solution-based-on-bfs-and-dfs/2
+
 
 ### Word Ladder
 
