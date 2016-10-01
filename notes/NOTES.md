@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Merge Sorted Array
+
+* 2016/10/01
+
+
 ### Word Ladder 2
 
 * 2016/09/30 Not Yet Accepted
