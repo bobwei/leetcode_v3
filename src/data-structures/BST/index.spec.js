@@ -17,6 +17,11 @@ describe('test Binary Search Tree', () => {
       .add(2)
       .add(1, 3, 5, 4, 2);
     expect(bst.bfs()).toEqual([2, 1, 3, 5, 4]);
+    bst = (new BST())
+      .add(4, 2, 1, 3, 6, 5, 7);
+    expect(bst.bfs()).toEqual([4, 2, 6, 1, 3, 5, 7]);
+    bst = (new BST());
+    expect(bst.bfs()).toEqual([]);
   });
   it('can check if it contains a certain value', () => {
     values = [1, 2, 3, 3, 4, 9];
@@ -40,5 +45,25 @@ describe('test Binary Search Tree', () => {
     bst = (new BST())
       .add(0, 1);
     expect(bst.findMax()).toBe(1);
+  });
+  it('can delete value and values from BST', () => {
+    bst = (new BST())
+      .add(4, 2, 1, 3, 6, 5, 7);
+    expect(bst.bfs()).toEqual([4, 2, 6, 1, 3, 5, 7]);
+    bst
+      .delete(4, 1);
+    expect(bst.bfs()).toEqual([3, 2, 6, 5, 7]);
+    bst
+      .delete(4);
+    expect(bst.bfs()).toEqual([3, 2, 6, 5, 7]);
+    bst
+      .delete(6);
+    expect(bst.bfs()).toEqual([3, 2, 5, 7]);
+    bst
+      .delete(3, 2, 5, 7);
+    expect(bst.bfs()).toEqual([]);
+    bst
+      .delete(3);
+    expect(bst.bfs()).toEqual([]);
   });
 });

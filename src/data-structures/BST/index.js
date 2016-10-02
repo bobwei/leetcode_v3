@@ -35,6 +35,29 @@ export class TreeNode {
     return this.right.findMax();
   }
 
+  delete(val) {
+    if (val < this.val) {
+      if (this.left) {
+        this.left = this.left.delete(val);
+      }
+    } else if (val > this.val) {
+      if (this.right) {
+        this.right = this.right.delete(val);
+      }
+    } else {
+      if (!this.left) {
+        return this.right;
+      } else if (!this.right) {
+        return this.left;
+      } else {
+        const leftMax = this.left.findMax();
+        this.val = leftMax;
+        this.left = this.left.delete(leftMax);
+      }
+    }
+    return this;
+  }
+
   contains(val) {
     if (val === this.val) {
       return true;
@@ -73,12 +96,26 @@ export default class BST {
     return this.root.findMax();
   }
 
+  delete(...args) {
+    if (!this.root) {
+      return this;
+    }
+    while (args.length) {
+      const val = args.shift();
+      this.root = this.root.delete(val);
+    }
+    return this;
+  }
+
   contains(val) {
     return this.root.contains(val);
   }
 
   bfs() {
     const output = [];
+    if (!this.root) {
+      return output;
+    }
     const queue = [this.root];
     while (queue.length) {
       const node = queue.shift();
