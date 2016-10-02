@@ -1,6 +1,13 @@
 # Algorithm Notes
 
 
+### BST
+
+* 2016/10/02
+* add BST data structure
+* be able to use jest to test
+
+
 ### Merge Sorted Array
 
 * 2016/10/01
