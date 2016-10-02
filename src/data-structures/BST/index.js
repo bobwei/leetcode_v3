@@ -69,6 +69,17 @@ export class TreeNode {
     }
     return false;
   }
+
+  getHeight() {
+    let height = -1;
+    if (this.left) {
+      height = Math.max(height, this.left.getHeight());
+    }
+    if (this.right) {
+      height = Math.max(height, this.right.getHeight());
+    }
+    return height + 1;
+  }
 }
 
 export default class BST {
@@ -109,6 +120,13 @@ export default class BST {
 
   contains(val) {
     return this.root.contains(val);
+  }
+
+  getHeight() {
+    if (!this.root) {
+      return -1;
+    }
+    return this.root.getHeight();
   }
 
   bfs() {

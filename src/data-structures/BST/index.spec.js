@@ -66,4 +66,21 @@ describe('test Binary Search Tree', () => {
       .delete(3);
     expect(bst.bfs()).toEqual([]);
   });
+  it('can calculate tree height', () => {
+    bst = (new BST())
+      .add(4, 2, 1, 3);
+    expect(bst.getHeight()).toBe(2);
+    bst = (new BST())
+      .add(4, 2, 1, 3, 100, 101, 102);
+    expect(bst.getHeight()).toBe(3);
+    bst
+      .delete(100, 4);
+    expect(bst.getHeight()).toBe(2);
+    bst
+      .delete(2, 1, 3, 102);
+    expect(bst.getHeight()).toBe(0);
+    bst
+      .delete(101);
+    expect(bst.getHeight()).toBe(-1);
+  });
 });
