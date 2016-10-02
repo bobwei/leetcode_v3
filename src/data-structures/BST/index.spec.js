@@ -27,4 +27,18 @@ describe('test Binary Search Tree', () => {
     });
     expect(bst.contains(19)).toBe(false);
   });
+  it('can find min and find max', () => {
+    bst = (new BST())
+      .add(1, 5, 3, 4, 7);
+    expect(bst.findMin()).toBe(1);
+    bst = (new BST())
+      .add(0, 1);
+    expect(bst.findMin()).toBe(0);
+    bst = (new BST())
+      .add(1, 5, 3, 4, 7);
+    expect(bst.findMax()).toBe(7);
+    bst = (new BST())
+      .add(0, 1);
+    expect(bst.findMax()).toBe(1);
+  });
 });

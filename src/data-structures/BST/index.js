@@ -21,6 +21,20 @@ export class TreeNode {
     return this;
   }
 
+  findMin() {
+    if (!this.left) {
+      return this.val;
+    }
+    return this.left.findMin();
+  }
+
+  findMax() {
+    if (!this.right) {
+      return this.val;
+    }
+    return this.right.findMax();
+  }
+
   contains(val) {
     if (val === this.val) {
       return true;
@@ -49,6 +63,14 @@ export default class BST {
       }
     }
     return this;
+  }
+
+  findMin() {
+    return this.root.findMin();
+  }
+
+  findMax() {
+    return this.root.findMax();
   }
 
   contains(val) {
