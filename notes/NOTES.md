@@ -6,7 +6,7 @@
 * 2016/10/03
 
 
-### Binary Tree Post Order Traversal iterative version
+### Binary Tree Postorder Traversal iterative version
 
 * 2016/10/03
 
