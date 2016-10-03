@@ -1,6 +1,28 @@
 # Algorithm Notes
 
 
+### Binary Tree Post Order Traversal iterative version
+
+* 2016/10/03
+
+
+### Binary Tree Right Side View
+
+* 2016/10/03
+
+
+### Sum of Left Leaves
+
+* 2016/10/03
+
+
+### BT
+
+* 2016/10/03
+* add BT data structure
+* be able to construct BT from array
+
+
 ### BST
 
 * 2016/10/02
