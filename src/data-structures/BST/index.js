@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 export class TreeNode {
   constructor(val) {
     this.val = val;
