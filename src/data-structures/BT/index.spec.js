@@ -5,6 +5,10 @@ describe('test Binary Tree', () => {
   it('can be constructed from an array', () => {
     bt = BT.from([0, 1, 2, 3, 4, 5, 6]);
     expect(bt.root.val).toEqual(0);
+    bt = BT.from([]);
+    expect(bt.root).toEqual(null);
+    bt = BT.from([null]);
+    expect(bt.root).toEqual(null);
   });
   it('can do inOrder traversal', () => {
     bt = BT.from([0, 1, 2, 3, 4, 5, 6]);
