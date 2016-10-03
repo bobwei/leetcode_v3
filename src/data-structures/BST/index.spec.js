@@ -83,4 +83,9 @@ describe('test Binary Search Tree', () => {
       .delete(101);
     expect(bst.getHeight()).toBe(-1);
   });
+  it('can get keys', () => {
+    bst = (new BST())
+      .add(4, 2, 1, 3, 6, 5, 7);
+    expect(bst.keys()).toEqual([1, 2, 3, 4, 5, 6, 7]);
+  });
 });

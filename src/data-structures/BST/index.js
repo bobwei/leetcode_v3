@@ -148,4 +148,21 @@ export default class BST {
     }
     return output;
   }
+
+  keys() {
+    const output = [];
+    let ptr = this.root;
+    const stack = [];
+    while (stack.length || ptr) {
+      if (ptr) {
+        stack.push(ptr);
+        ptr = ptr.left;
+      } else {
+        const node = stack.pop();
+        output.push(node.val);
+        ptr = node.right;
+      }
+    }
+    return output;
+  }
 }
