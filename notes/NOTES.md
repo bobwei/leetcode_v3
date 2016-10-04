@@ -1,6 +1,12 @@
 # Algorithm Notes
 
 
+### Minimum Size Subarray Sum
+
+* 2016/10/04
+* sliding window algorithm to reduce unnecessary tryings
+
+
 ### Group Anagrams
 
 * 2016/10/03
