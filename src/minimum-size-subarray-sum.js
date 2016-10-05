@@ -15,7 +15,7 @@ const minSubArrayLen = (s, nums) => {
     for (let j = Math.max(i, lastJ); j < nums.length; j++) {
       if (!path.has(j)) {
         path.add(j);
-        currentSum += nums[j]
+        currentSum += nums[j];
       }
       if (currentSum >= s) {
         minLength = Math.min(minLength, j - i + 1);
