@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### N-Queens
+
+* 2016/10/05
+
+
 ### Maximum Product Subarray
 
 * 2016/10/04
