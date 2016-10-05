@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Longest Substring with At Least K Repeating Characters
+
+* 2016/10/05
+
+
 ### Longest Palindrome
 
 * 2016/10/05
