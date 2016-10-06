@@ -84,8 +84,8 @@ export class TreeNode {
 }
 
 export default class BST {
-  constructor() {
-    this.root = null;
+  constructor(root = null) {
+    this.root = root;
   }
 
   add(...args) {
