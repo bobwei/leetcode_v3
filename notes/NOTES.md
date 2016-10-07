@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### Longest Increasing Subsequence
+
+* 2016/10/07
+
+
 ### Unique Binary Search Trees II
 
 * 2016/10/06
