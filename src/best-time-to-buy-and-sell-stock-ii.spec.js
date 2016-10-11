@@ -4,5 +4,7 @@ describe('test maxProfit', () => {
   it('can get maxProfit', () => {
     expect(maxProfit([1, 3, 5, 4, 2, 9])).toBe(11);
     expect(maxProfit([7, 1, 5, 3, 6, 4])).toBe(7);
+    expect(maxProfit([])).toBe(0);
+    expect(maxProfit([1])).toBe(0);
   });
 });
