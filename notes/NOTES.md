@@ -1,6 +1,11 @@
 # Algorithm Notes
 
 
+### N-Queens II
+
+* 2016/10/18
+
+
 ### Best Time to Buy and Sell Stock
 
 * 2016/10/11
